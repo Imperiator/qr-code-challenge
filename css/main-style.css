@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lg: hsl(212, 45%, 89%);
+    --blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: var(--lg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius:10px;
+    width: 400px;
+    box-shadow: 0 0 11px -4px var(--dark-blue);
+    /* height: 700px; */
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.qrcode {
+    width: 360px;
+    height: 360px;
+    border-radius: 10px;
+    margin: 20px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.main-text {
+    padding: 0 40px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.text {
+    padding: 15px 45px 40px 45px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--blue);
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 300px;
+    }
+
+    .qrcode {
+        width: 260px;
+        height: 260px;
+    }
+
+    .main-text {
+        font-size: 20px;
+    }
+
+    .text {
+        padding: 15px 25px 40px 25px;
+        font-size: 12px;
+    }
+}
+    
